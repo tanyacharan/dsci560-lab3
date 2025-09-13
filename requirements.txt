@@ -1,0 +1,10 @@
+# Core dependencies
+yfinance>=0.2.18
+pandas>=1.5.0
+mysql-connector-python>=8.0.33
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Extras
+numpy>=1.21.0
