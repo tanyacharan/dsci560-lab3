@@ -40,7 +40,7 @@ def populate_portfolio(username, tickers):
         stock = yf.Ticker(ticker)
         hist = stock.history(period="5d")  # get last 5 days
         if hist.empty:
-            print(f"❌ No data found for {ticker}")
+            print(f" No data found for {ticker}")
             continue
 
         for date, row in hist.iterrows():
