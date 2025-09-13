@@ -40,7 +40,7 @@ def populate_portfolio(username, tickers):
         stock = yf.Ticker(ticker)
         hist = stock.history(period="5d")  # get last 5 days
         if hist.empty:
-            print(f"❌ No data found for {ticker}")
+            print(f" No data found for {ticker}")
             continue
 
         for date, row in hist.iterrows():
@@ -48,7 +48,7 @@ def populate_portfolio(username, tickers):
                 INSERT IGNORE INTO {table_name} (ticker, date, open, close, volume)
                 VALUES (%s, %s, %s, %s, %s)
             """, (ticker, date.date(), row['Open'], row['Close'], row['Volume']))
-        print(f"✅ Inserted data for {ticker}")
+        print(f" Inserted data for {ticker}")
 
     conn.commit()
     cursor.close()
