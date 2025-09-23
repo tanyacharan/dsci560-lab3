@@ -12,7 +12,7 @@ A secure command-line portfolio management system that allows users to track sto
 - User registration and secure authentication (password hashing with salt)
 - Multiple portfolio creation and management
 - Real-time stock data fetching from Yahoo Finance
-- Add/remove stocks from portfolios
+- Add/remove stocks from the portfolios
 - Update date ranges for interday portfolios
 - Simple portfolio performance metrics (todo more detailed metrics)
 - Comprehensive help system
